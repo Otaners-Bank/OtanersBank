@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="icon" href="https://thaleslj.github.io/otanersbank/pages/images/O.jpg">
+    <link rel="stylesheet" href="./pages/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./pages/css/owl.carousel.min.css">
+
+    <script src="./pages/js/jquery.min.js"></script>
+    <script src="./pages/js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                lazyLoad: true,
+                margin: 0,
+                nav: true,
+                responsiveClass: true,
+                startPosition: 1,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+        });
+    </script>
+
+    <style>
+        .Container {
+            margin-top: 5%;
+        }
+
+        .Carrosel {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+
+    <title>Otaner's Bank</title>
+
+</head>
+
+<body style="margin: 0; padding: 0;">
+
+    <div class="owl-carousel owl-theme Carrosel">
+
+        <div class="item">
+            <div class="Container">
+                <iframe name="iframeContact" src="./pages/Contato.html"></iframe>
+            </div>
+        </div>
+        <div class="item">
+            <div class="Container">
+                <iframe name="iframeContact" src="./pages/Inicio.html"></iframe>
+            </div>
+        </div>
+        <div class="item">
+            <div class="Container">
+                <iframe name="iframeContact" src="./pages/Projetos.html"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
