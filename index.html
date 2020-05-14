@@ -3,83 +3,50 @@
 
 <head>
 
-    <link rel="icon" href="https://thaleslj.github.io/otanersbank/pages/images/O.jpg">
-    <link rel="stylesheet" href="./pages/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./pages/css/owl.carousel.min.css">
+    <!-- CSS E JQUERY -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- CSS E JQUERY -->
 
-    <script src="./pages/js/jquery.min.js"></script>
-    <script src="./pages/js/owl.carousel.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                loop: true,
-                lazyLoad: true,
-                margin: 0,
-                nav: true,
-                responsiveClass: true,
-                startPosition: 1,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    1000: {
-                        items: 1
-                    }
-                }
-            });
-        });
-    </script>
-
-    <style>
-        .Container {
-            margin-top: 5%;
-        }
-
-        .Carrosel {
-            background-color: rgb(255, 255, 255);
-            text-align: center;
-        }
-
-        body {
-            background-color: rgb(255, 255, 255);
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+    <!-- SCRIPT E ESTILOS -->
+    <link rel="icon" href="images/O.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <!-- SCRIPT E ESTILOS -->
 
     <title>Otaner's Bank</title>
 
 </head>
 
-<body style="margin: 0; padding: 0;">
+<body>
 
-    <div class="owl-carousel owl-theme Carrosel">
-
-        <div class="item">
-            <div class="Container">
-                <iframe name="iframeContact" src="./pages/Contato.html"></iframe>
-            </div>
-        </div>
-        <div class="item">
-            <div class="Container">
-                <iframe name="iframeContact" src="./pages/Inicio.html"></iframe>
-            </div>
-        </div>
-        <div class="item">
-            <div class="Container">
-                <iframe name="iframeContact" src="./pages/Projetos.html"></iframe>
-            </div>
-        </div>
-
+    <div id="content-navbar">
+        <ul class="nav nav-pills">
+            <li class="nav-item content-navbar-link">
+                <a id="linkInicio" class="nav-link active">Ínicio</a>
+            </li>
+            <li class="nav-item content-navbar-link">
+                <a id="linkAPI" class="nav-link">API</a>
+            </li>
+            <li class="nav-item">
+                <a id="linkSolucoes" class="nav-link content-navbar-link">Soluções</a>
+            </li>
+        </ul>
     </div>
+
+
+    <iframe id="content" frameBorder="0" src="pages/inicio.html">
+
+    </iframe>
 
 </body>
 
