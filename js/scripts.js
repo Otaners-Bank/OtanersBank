@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $('#linkInicio').click(function () {
-        document.getElementById('content').src = 'pages/inicio.html';
+        document.getElementById('content').src = 'pages/info.html';
         if (!$('#linkInicio').hasClass('active')) $('#linkInicio').toggleClass("active");
         if ($('#linkAPI').hasClass('active')) $('#linkAPI').toggleClass("active");
         if ($('#linkSolucoes').hasClass('active')) $('#linkSolucoes').toggleClass("active");
